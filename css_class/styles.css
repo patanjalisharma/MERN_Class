@@ -1,0 +1,17 @@
+h3 {
+    color: cadetblue;
+}
+
+
+.class {
+    background-color: hotpink;
+}
+
+#id {
+    background-color: blue;
+    color: white;
+}
+
+p, article {
+    background-color: blueviolet;
+}
