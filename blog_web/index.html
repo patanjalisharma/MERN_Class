@@ -6,143 +6,141 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="styles.css">
     <title>Bloggy</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/"
-          ><img
-            src="https://images.unsplash.com/photo-1545231027-637d2f6210f8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bG9nb3xlbnwwfHwwfHx8MA%3D%3D"
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="logo">
+          <img
+            src="https://images.unsplash.com/photo-1545231027-637d2f6210f8?w=400"
             alt="logo"
             height="70"
             width="70"
-            srcset=""
-        /></a>
+            class="logo-img"
+          />
+        </a>
 
-        <ul>
-          <li><a href="/login">Login</a></li>
-          <li><a href="/register">Register</a></li>
+        <ul class="nav-list">
+          <li><a href="/login" class="nav-link">Login</a></li>
+          <li><a href="/register" class="nav-link">Register</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1>Welcome to Bloggy!</h1>
-        <p>
+      <section class="hero container">
+        <h1 class="hero-title">Welcome to Bloggy!</h1>
+        <p class="hero-subtitle">
           The ultimate bullet journal platform to document, reflect and embrace
           your journey
         </p>
 
-        <ul>
-          <li><a href="/getstarted">Get Started</a></li>
-          <li><a href="/learnmore">Learn More</a></li>
+        <ul class="hero-buttons">
+          <li><a href="/getstarted" class="btn btn-primary">Get Started</a></li>
+          <li><a href="/learnmore" class="btn btn-secondary">Learn More</a></li>
         </ul>
       </section>
 
-      <section>
-        <h2>Features of Bloggy</h2>
+      <section class="features container">
+        <h2 class="section-title">Features of Bloggy</h2>
 
-        <h4>Today’s Quote</h4>
-        <p>A motivational quote or journaling prompt to spark writing.</p>
+        <div class="feature">
+          <h4>✨ Today’s Quote</h4>
+          <p>A motivational quote or journaling prompt to spark writing.</p>
+        </div>
 
-        <h4>Calendar Snapshot</h4>
-        <p>Mini calendar showing which days have entries logged.</p>
+        <div class="feature">
+          <h4>📅 Calendar Snapshot</h4>
+          <p>Mini calendar showing which days have entries logged.</p>
+        </div>
 
-        <h4>Recent Entries Preview</h4>
-        <p>Last 2–3 entries summarized with date & title.</p>
+        <div class="feature">
+          <h4>📝 Recent Entries Preview</h4>
+          <p>Last 2–3 entries summarized with date & title.</p>
+        </div>
 
-        <h4>Daily Gratitude Card</h4>
-        <p>Simple field: “One thing I’m grateful for today is…”</p>
+        <div class="feature">
+          <h4>💖 Daily Gratitude Card</h4>
+          <p>Simple field: “One thing I’m grateful for today is…”</p>
+        </div>
       </section>
 
-      <section>
-        <h2>Latest Blog Posts</h2>
-        <article>
+      <section class="blogs container">
+        <h2 class="section-title">Latest Blog Posts</h2>
+
+        <article class="blog-card">
           <h3>🌱 5 Morning Habits for a Productive Day</h3>
           <p>
-            Starting your day with the right mindset can transform your life.
-            Discover simple habits like journaling, meditation, and gratitude
-            that bring focus and peace into your daily routine.
+            Starting your day with the right mindset can transform your life...
           </p>
-
           <img
-            src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9ybmluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=400"
             alt=""
           />
-          <p><a href="/readmore">Read More</a></p>
+          <p><a href="/readmore" class="read-more">Read More</a></p>
         </article>
 
-        <article>
+        <article class="blog-card">
           <h3>📖 Why Journaling Improves Mental Clarity</h3>
-          <p>
-            Writing down your thoughts isn’t just therapeutic – it helps you
-            reflect, organize emotions, and make better decisions. Learn how 10
-            minutes of journaling can change your perspective.
-          </p>
+          <p>Writing down your thoughts isn’t just therapeutic...</p>
           <img
-            src="https://plus.unsplash.com/premium_photo-1684444605542-93725082d214?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8am91cm5hbGlzbXxlbnwwfHwwfHx8MA%3D%3D"
+            src="https://plus.unsplash.com/premium_photo-1684444605542-93725082d214?w=400"
             alt=""
           />
-          <p><a href="/readmore">Read More</a></p>
+          <p><a href="/readmore" class="read-more">Read More</a></p>
         </article>
 
-        <article>
+        <article class="blog-card">
           <h3>💡 Digital Minimalism: Less is More</h3>
-          <p>
-            In today’s busy digital world, cutting down on distractions is key.
-            Explore how digital minimalism and mindful journaling can help you
-            regain focus and live intentionally.
-          </p>
+          <p>In today’s busy digital world, cutting down on distractions...</p>
           <img
-            src="https://images.unsplash.com/photo-1750263160611-46a82aea9621?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8ZGlnaXRhbHxlbnwwfHwwfHx8MA%3D%3D"
+            src="https://images.unsplash.com/photo-1750263160611-46a82aea9621?w=400"
             alt=""
           />
-          <p><a href="/readmore">Read More</a></p>
-        </article>
-        <article>
-          <h3>💭 Evening Reflections: End Your Day with Clarity</h3>
-          <p>
-            A few minutes of nighttime journaling can help you unwind, process
-            your day, and sleep better. Try these reflective writing tips.
-          </p>
-          <img
-            src="https://images.unsplash.com/photo-1643586921674-43fe59b71190?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXZlbmluZyd8ZW58MHx8MHx8fDA%3D"
-            alt=""
-          />
-          <p><a href="/readmore">Read More</a></p>
+          <p><a href="/readmore" class="read-more">Read More</a></p>
         </article>
 
-        <article>
-          <h3>✨ Gratitude Journaling: Small Notes, Big Impact</h3>
-          <p>
-            Learn how a daily gratitude practice can shift your mindset, boost
-            happiness, and transform how you see the world.
-          </p>
+        <article class="blog-card">
+          <h3>💭 Evening Reflections: End Your Day with Clarity</h3>
+          <p>A few minutes of nighttime journaling can help you unwind...</p>
           <img
-            src="https://images.unsplash.com/photo-1528938102132-4a9276b8e320?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhdGl0dWRlfGVufDB8fDB8fHww"
+            src="https://images.unsplash.com/photo-1643586921674-43fe59b71190?w=400"
             alt=""
           />
-          <p><a href="/readmore">Read More</a></p>
+          <p><a href="/readmore" class="read-more">Read More</a></p>
+        </article>
+
+        <article class="blog-card">
+          <h3>✨ Gratitude Journaling: Small Notes, Big Impact</h3>
+          <p>Learn how a daily gratitude practice can shift your mindset...</p>
+          <img
+            src="https://images.unsplash.com/photo-1528938102132-4a9276b8e320?w=400"
+            alt=""
+          />
+          <p><a href="/readmore" class="read-more">Read More</a></p>
         </article>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <h4>Socials</h4>
-      <a href="https://www.instagram.com/"
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
-      <a href="https://www.linkedin.com/"
-        ><i class="fa-brands fa-linkedin"></i
-      ></a>
-      <a href="https://www.github.com/"><i class="fa-brands fa-github"></i></a>
-      <p>Made with 💗 by Patanjali Sharma</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/" class="social-link"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/" class="social-link"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.github.com/" class="social-link"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <p class="footer-text">Made with 💗 by Patanjali Sharma</p>
     </footer>
   </body>
 </html>

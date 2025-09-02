@@ -1,0 +1,72 @@
+.box, .box1 {
+    background-color: hotpink;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid cyan ;
+    
+    margin: 20px;
+    border-radius: 50%;
+    color: white;
+    
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.h1, legend {
+    color: darkviolet;
+}
+
+.first {
+    border: 6px solid cyan;
+    width: 300px;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 7px solid black;
+    height: 100px;
+}
+
+.fbox1 {
+    background-color: orangered;
+    height: 100px;
+    width: 33%;
+    float: right;
+}
+
+.main {
+    border: 4px solid cyan;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+}
+
+.dibba {
+    background-color: hotpink;
+    height: 70px;
+    width: 70px;
+    border: 1px solid ;
+}
+.dibba1 {
+    background-color: hotpink;
+    height: 70px;
+    width: 70px;
+    border: 1px solid ;
+    position: relative;
+    bottom: 90px;
+}
+
