@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Catalogue</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-black shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">🍔 Bites</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Khana dhundho..."
+              aria-label="Search"
+            />
+            <button class="btn btn-warning" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="text-center text-white d-flex flex-column justify-content-center  align-items-center"
+      style="
+        background: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?w=1600&q=80&auto=format&fit=crop')
+          center/cover no-repeat;   
+        height: 70vh;
+      "
+    >
+      <div class="p-5 rounded">
+        <h1 class="display-4 fw-bold">Delicious Food, Delivered Fresh 🍴</h1>
+        <p class="lead mb-4">Taste the best of India with every bite!</p>
+        <a href="#catalogue" class="btn btn-warning btn-lg">Explore Menu</a>
+      </div>
+    </section>
+    <main class="container py-5" id="catalogue">
+      <h1 class="text-center fw-bold mb-5">🍴 Food Catalogue</h1>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-lg border-0">
+            <img
+              src="https://media.istockphoto.com/id/1319478611/photo/bharwa-masala-bhindi-or-stuffed-okra.jpg?s=2048x2048&w=is&k=20&c=zYQz0ab8ct0tiVVqHmq0Cy7LRrRBY20qJfPmarIMe_8="
+              class="card-img-top"
+              alt="Bhindhi"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bhindhi Masala</h5>
+              <p class="card-text flex-grow-1">
+                A delicious curry made with fresh okra and spices.
+              </p>
+              <p class="fw-bold text-success">₹299</p>
+              <a href="#" class="btn btn-warning mt-auto">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-lg border-0">
+            <img
+              src="https://media.istockphoto.com/id/1307253080/photo/methi-paratha.webp?a=1&b=1&s=612x612&w=0&k=20&c=WrRNpnYwfRi39TPTJf17rZ7sp5uPRIb3uC8DgezSzhs="
+              class="card-img-top"
+              alt="Methi Paratha"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Methi Paratha</h5>
+              <p class="card-text flex-grow-1">
+                Soft flaky paratha stuffed with fenugreek leaves.
+              </p>
+              <p class="fw-bold text-success">₹199</p>
+              <a href="#" class="btn btn-warning mt-auto">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-lg border-0">
+            <img
+              src="https://images.unsplash.com/photo-1542367592-8849eb950fd8?w=400&auto=format&fit=crop&q=60"
+              class="card-img-top"
+              alt="Idli Sambhar"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Idli Sambhar</h5>
+              <p class="card-text flex-grow-1">
+                Soft idlis served with sambhar & chutney.
+              </p>
+              <p class="fw-bold text-success">₹249</p>
+              <a href="#" class="btn btn-warning mt-auto">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-lg border-0">
+            <img
+              src="https://images.unsplash.com/photo-1542367592-8849eb950fd8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW5kaWFuJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top"
+              alt="Indian Thali"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Indian Thali</h5>
+              <p class="card-text flex-grow-1">
+                A complete meal with multiple dishes in one plate.
+              </p>
+              <p class="fw-bold text-success">₹349</p>
+              <a href="#" class="btn btn-warning mt-auto">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-lg border-0">
+            <img
+              src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&auto=format&fit=crop&q=60"
+              class="card-img-top"
+              alt="Samosa"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Samosa</h5>
+              <p class="card-text flex-grow-1">
+                Crispy snack filled with spicy potato & peas.
+              </p>
+              <p class="fw-bold text-success">₹99</p>
+              <a href="#" class="btn btn-warning mt-auto">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-lg border-0">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1694141253763-209b4c8f8ace?w=400&auto=format&fit=crop&q=60"
+              class="card-img-top"
+              alt="Paneer Thali"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Paneer Thali</h5>
+              <p class="card-text flex-grow-1">
+                A wholesome thali featuring paneer delicacies.
+              </p>
+              <p class="fw-bold text-success">₹399</p>
+              <a href="#" class="btn btn-warning mt-auto">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer bg-dark text-center text-white py-4 mt-5">
+      <div class="container">
+        <h5 class="fw-bold mb-2">FoodCatalog</h5>
+        <p>Fresh, Tasty and Delivered with Love ❤</p>
+        <div class="social-icons mb-3">
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/patanjalisharma_"
+            class="text-white me-3"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="mb-0">&copy; 2025 FoodCatalog. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
