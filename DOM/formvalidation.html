@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form id="form" novalidate>
+                <h3>register</h3>
+                <label for="username">Name:</label>
+                <input type="text" placeholder="name" required id="username" name="username">
+                <p class="name"></p>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="example@gmail.com" required id="email" name="email">
+                <p class="mail"></p>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="password" required id="password" name="password">
+                <p class="pass"></p>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="message"></div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        const form = document.getElementById('form')
+        const success = document.querySelector('.message')
+
+        form.addEventListener('submit', function(e){ 
+            e.preventDefault()
+            const username = document.getElementById('username').value.trim()
+        const email = document.getElementById('email').value.trim()
+        const password = document.getElementById('password').value.trim()
+        const nameError = document.querySelector('.name')
+        const emailError = document.querySelector('.mail')
+        const passError = document.querySelector('.pass')
+
+        let isValid = true
+
+        if(!username){
+            nameError.innerText = 'Name is required'
+            nameError.style.backgroundColor = 'red'
+             isValid = false
+        }
+
+        if(!email){
+            emailError.innerText = 'Email is required'
+            emailError.style.backgroundColor = 'red'
+             isValid = false
+        }
+        if(!email.endsWith('@gmail.com')){
+            emailError.innerText = 'Please enter a valid email'
+            emailError.style.backgroundColor = 'red'
+             isValid = false
+        }
+
+        if(!password){
+            passError.innerText = 'Password is required'
+            passError.style.backgroundColor = 'red'
+             isValid = false
+        }
+
+        if(isValid){
+            form.reset()
+            nameError.innerText = ''
+            emailError.innerText = ''
+            passError.innerText = ''
+            success.innerText = 'Form submitted successfully!'
+            success.style.backgroundColor = 'green'
+        }
+        
+            
+        })
+        
+    </script>
+</body>
+</html>

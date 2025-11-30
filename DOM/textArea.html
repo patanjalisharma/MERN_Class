@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="board" id="board" placeholder="Type here...."></textarea>
+    <p>Characters remaining: <span style="color: green;" id="charCount">100</span></p>
+
+
+    <script>
+
+        const board = document.getElementById('board')
+        const charCount = document.getElementById('charCount')
+        const maxChars = 100
+
+        board.addEventListener('input', function(){
+            const curr = board.value.length
+            if(curr > maxChars){
+               
+            board.value = board.value.substring(0, maxChars);
+            curr = maxChars;
+        
+            }
+            const rem = maxChars - curr
+            charCount.innerText = rem
+
+            if (rem > 50) charCount.style.color='green'
+            if(rem <= 50 && rem >= 20) charCount.style.color='orange'
+            if(rem < 20) charCount.style.color='red'
+
+
+
+        })
+
+
+    </script>
+</body>
+</html>
