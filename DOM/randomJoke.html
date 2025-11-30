@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        button {
+            padding: 10px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Here is a Random Joke</h1>
+
+            <p id="para">click the button to load joke</p>
+            <div class="btn">
+            <button id="button">Next Joke</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('button')
+        const para = document.getElementById('para')
+        button.addEventListener('click', () => {
+            button.disabled = true
+            para.textContent = 'Loading...'
+
+            fetch("https://official-joke-api.appspot.com/random_joke").then(response => response.json()).then(data => {
+                para.textContent = `${data.setup} - ${data.punchline}`
+                button.disabled = false
+            }).catch(error => {
+                para.textContent = 'Failed to load joke. Please try again.'
+                button.disabled = false
+            })
+        })
+    </script>
+</body>
+</html>
